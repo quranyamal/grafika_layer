@@ -31,6 +31,10 @@ int main()
         return EXIT_FAILURE;
     }
 
+// *setup-pendengar-keyboard v2, if2an nya ada di keystroke_listener.c
+	//pthread_t keystrokeThread;
+	//pthread_create(&keystrokeThread, NULL, keystrokeListener, NULL);
+
 //**setup-objek-game****************************************************************************
 	init_fb();
 
@@ -43,6 +47,7 @@ int main()
 	refreshBuffer(pl0,pl1);
 
 	loadBuffer();
+	//pthread_join(keystrokeThread, NULL);
 	return 0;
 }
 
