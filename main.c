@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <time.h>
+#include "keystroke_listener.h"
 
 void drawObjects();		//menggambar tembakan dan objekTabrak ke buffer
 void *preUpdate();		//(1)cek inputuser
